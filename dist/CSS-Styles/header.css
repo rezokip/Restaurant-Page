@@ -1,0 +1,29 @@
+.header{
+  background-color: rgb(201, 125, 125);
+  opacity: 0.95;
+  z-index: 1;
+  height: 80px;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0px;
+}
+
+.header div:hover{
+  cursor: pointer;
+  color: orange;
+}
+
+
+
+
+
+
+
+
+
+
