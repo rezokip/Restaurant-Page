@@ -6,7 +6,7 @@ import menuPic3 from './menu-pic3.jpg'
 import menuPic4 from './menu-pic4.jpg'
 
 let menuPageContent = function(){
-
+page.domEl.textContent=''
 const menupic1 = new Image()
 const menupic2 = new Image()
 const menupic3 = new Image()

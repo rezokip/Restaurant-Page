@@ -2,7 +2,7 @@ import {ElementClass, page} from './index.js'
 
 
 let kontaktPageContent= function(){
- 
+page.domEl.textContent='' 
 let openingHours = new ElementClass('div', page, 'opening-hours', ) 
 let openingTitle = new ElementClass('h2', openingHours, 'opening-hours-title', 'Öffnungszeiten')
 let monday = new ElementClass('p', openingHours, 'opening-hours-monday', 'Montag: 12 Uhr - 21 Uhr')
