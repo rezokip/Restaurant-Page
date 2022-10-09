@@ -1,9 +1,18 @@
+
+import menuPic2 from './menu-pic2.jpg'
+import menuPic3 from './menu-pic3.jpg'
+import menuPic4 from './menu-pic4.jpg'
+
+import { menuPageContent } from './menu.js'
+
+
 import Icon from './cigkoftem-logo.png'
 const CigkoftemLogo = new Image()
 CigkoftemLogo.src = Icon
 
+
 import { kontaktPageContent } from "./kontakt.js"
-import { menuPageContent } from './menu.js'
+
 export {ElementClass, page}
 
 class ElementClass { 
@@ -36,11 +45,13 @@ class ElementClass {
 const content = document.querySelector('#content')
 const imageContainer = new ElementClass('div', content, 'image-container')
 imageContainer.domEl.appendChild(CigkoftemLogo)
+
 let header = new ElementClass('div', content, 'header')
 let home = new ElementClass('div', header, 'home', 'HOME')
 let menu = new ElementClass('div', header, 'menu', 'MENU')
 let kontakt = new ElementClass('div', header, 'kontakt', 'KONTAKT')
 let page =  new ElementClass('div', content, 'page', )  
+
 
 let homePageContent=function(){
   let descriptionFirst = new ElementClass('p', page, 'description-first', 'Wir in Nürnberg, im herzen der Südstadt können auf eine über 10 Jährige Erfahrung zurückblicken. Unser Ziel ist es mit unserer langjährigen Erfahrung euch das beste und optimale Geschmackserlebnis zu bieten. Cigköfte reicht auf eine traditionelle Herkunft von mehreren hundert Jahren zurück. Es ist eine herzhafte Paste, die aus Bulgur (Weizen), Tomatenmark, Paprikamark, zahlreiche Gewürze, gemahlene Nüsse und weitere Bestandteile besteht. Diese natürlichen Zutaten bieten nicht zuletzt deshalb einen exzellenten Geschmack' )
@@ -68,7 +79,7 @@ let homePageContent=function(){
 homePageContent()
 home.domEl.addEventListener('click', function(){
   page.domEl.textContent= ''
-  kontaktPageContent()
+  homePageContent()
 })
 
 menu.domEl.addEventListener('click', function(){
@@ -76,3 +87,7 @@ menu.domEl.addEventListener('click', function(){
   menuPageContent()
 })
 
+kontakt.domEl.addEventListener('click', function(){
+  page.domEl.textContent = ''
+  kontaktPageContent()
+})

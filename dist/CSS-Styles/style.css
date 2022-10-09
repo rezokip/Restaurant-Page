@@ -17,6 +17,7 @@ body{
 
 img{
   width: 100%;
+ 
 }
 
 .header{
@@ -58,10 +59,10 @@ img{
 }
 
 
-
 .img-container{
-  margin: auto;
-  max-width: 600px;
   
+  width: max(350px, 100%)
+
 }
+
 
