@@ -25,7 +25,7 @@ img{
   opacity: 0.95;
   z-index: 1;
   height: 80px;
-  gap: 15px;
+  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,10 +59,27 @@ img{
 }
 
 
-.img-container{
-  
+.img-container{  
   width: max(350px, 100%)
-
 }
 
+.contact-container{
+  width: max(350px, 80%);
+  font-size: 30px;
+  line-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
 
+.contact-github-cont{
+  width: 30px;
+}
+
+a{
+  width: 100%;
+  height: 100%;
+}
